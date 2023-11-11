@@ -1,3 +1,38 @@
- div + p {
-color: blue;
+/* Pseudo Element*/
+
+p::first-line{
+    font-weight: bold;
+    color: darkred;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+p::first-letter{
+    font-size: 50px;
+
+}
+/* Pseudo Class*/
+ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+ul li:first-child{
+    background-color: aqua;
+}
+ul li:last-child{
+    background-color: brown;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+color: black;
+    background-color: chartreuse;
+}
+a:{
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
 }
